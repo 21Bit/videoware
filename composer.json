@@ -1,0 +1,43 @@
+{
+    "name": "bernas/videoware",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jofie Bernas",
+            "email": "jbdev21@gmail.com",
+            "homepage": "jbdev21.com"
+        }
+    ],
+    "homepage": "https://github.com/bernas/videoware",
+    "keywords": ["Laravel", "VideoWare"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Bernas\\VideoWare\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Bernas\\VideoWare\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bernas\\VideoWare\\VideoWareServiceProvider"
+            ],
+            "aliases": {
+                "VideoWare": "Bernas\\VideoWare\\Facades\\VideoWare"
+            }
+        }
+    }
+}
